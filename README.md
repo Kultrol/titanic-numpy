@@ -19,6 +19,12 @@ The supplied training and test CSVs are included so the example and tests can
 run locally. `gender_submission.csv` is Kaggle's sample submission;
 `submission.csv` contains this model's predictions.
 
+## Kaggle submission
+
+The submission achieved a **Kaggle public leaderboard score of 0.75598**.
+
+[View the published Kaggle notebook](https://www.kaggle.com/code/kultrol/titanic-submission-1-kultrol).
+
 ## Run
 
 From this project folder, with Python 3.14 or later and `uv` installed:
@@ -123,7 +129,8 @@ With the supplied CSV files and default settings (seed 42):
 - Local training converged after 3,776 epochs; final training after 3,850.
 - Final training used all 891 labeled passengers and produced 418 predictions.
 
-`submission.csv` is ready to upload. `training.log` records this run.
+`submission.csv` contains the final model's predictions. `training.log` records
+this local run.
 
 Reference: NumPy's [logaddexp documentation](https://numpy.org/doc/stable/reference/generated/numpy.logaddexp.html)
 describes the stable logarithm operation used by the loss.
